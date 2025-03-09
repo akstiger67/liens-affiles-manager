@@ -1,23 +1,28 @@
 # Affiliate Links Manager
 
-**Affiliate Links Manager** is a WordPress plugin that allows you to easily manage your affiliate links using a custom post type. The plugin automatically generates a rewritten URL based on a customizable intermediate slug and redirects your visitors to the specified affiliate URL. In the admin area, a dedicated column displays the rewritten URL along with a "Copy" button for quick access.
+**Affiliate Links Manager** is a WordPress plugin that allows you to easily manage your affiliate links using a custom post type. The plugin automatically generates a rewritten URL based on a customizable intermediate slug and redirects your visitors to the specified affiliate URL. In addition, the plugin features a modern, dedicated admin page where you can view, copy, and even edit each affiliate link's settings.
 
 ## Features
 
 - **Custom Post Type "Affiliate Links"**  
-  Manage your affiliate links directly from the WordPress admin.
+  Manage your affiliate links directly from the WordPress admin. (Internally registered as `aff_link` to avoid conflicts.)
 
 - **Affiliate URL Meta Box**  
-  Enter the affiliate URL when creating or editing an affiliate link.
+  Enter the affiliate URL when creating or editing an affiliate link. The meta box is styled with a modern table layout for a consistent look.
 
 - **Front-end Redirection**  
   When a visitor accesses a URL of the form `domain.com/[slug]/[post-name]`, they are automatically redirected to the entered affiliate URL.
 
 - **Customizable Intermediate Slug**  
-  Choose from a variety of options (e.g., `go`, `link`, `see`, `check`, `click`, `aller`, `lien`, `voir`, `regarder`, `cliquer`, `acceder`, `visiter`) via a settings page.
+  Set a global intermediate slug via a settings page. Choose from a variety of options (e.g., `go`, `link`, `see`, `check`, `click`, `aller`, `lien`, `voir`, `regarder`, `cliquer`). Additionally, you can override the global slug for each link individually through the dedicated admin page.
 
-- **Custom Admin Column**  
-  Displays the rewritten URL in the "Affiliate Links" admin list with a "Copy" button for quick copying.
+- **Dedicated Admin Page "Tous mes liens"**  
+  A modern, responsive admin interface displays all your affiliate links in a beautifully styled table. Each row includes:
+  - A **Copy** button to quickly copy the rewritten URL.
+  - An **Edit** button that opens an inline form to modify the intermediate slug (for that specific link) and the redirection URL.
+
+- **Better Design and UX**  
+  The plugin now features improved styling throughout the admin interface, including the settings page, meta box, and dedicated admin page, ensuring a smooth and visually appealing user experience.
 
 ## Installation
 
@@ -34,30 +39,31 @@
    Activate the plugin from the **Plugins** menu in the WordPress admin.
 
 5. **Configuration**  
-   Go to **Settings > Affiliate Links Manager** to choose the intermediate slug.  
+   Go to **Settings > Affiliate Links Manager** to choose the global intermediate slug.  
    **Note:** After changing this setting, refresh your permalinks by navigating to **Settings > Permalinks** and clicking "Save Changes".
 
 ## Usage
 
 ### Creating an Affiliate Link
 
-1. In the WordPress admin area, navigate to the **Affiliate Links** menu.
+1. In the WordPress admin area, navigate to **Liens affiliés**.
 2. Click **Add New** to create a new affiliate link.
 3. Enter the title (which will be used to generate the rewritten URL) and the affiliate URL in the meta box.
-4. Save the link.
+4. Save the link.  
+   For example, if the global intermediate slug is `go` and the title is `my-affiliate`, the generated URL will be:
    
-For example, if you choose `go` as the slug and the title is `my-affiliate`, the URL will be:  https://domain.com/go/my-affiliate
+https://domain.com/go/my-affiliate
 
 
-### Admin Area
+### Managing Your Affiliate Links
 
-In the "Affiliate Links" list, a **Rewritten URL** column displays the generated URL. A **Copy** button next to the URL allows you to quickly copy it to your clipboard.
-
-## Configuration
-
-- **Customize the Intermediate Slug**  
-Go to **Settings > Affiliate Links Manager** to select the intermediate slug from the available options.  
-After making changes, remember to refresh your permalinks via **Settings > Permalinks**.
+1. Navigate to the custom admin page **Tous mes liens** under the **Liens affiliés** menu.
+2. The page displays a modern, responsive table listing all your affiliate links with their rewritten URLs.
+3. Use the **Copy** button to quickly copy a URL.
+4. Click the **Edit** button to reveal an inline form that lets you:
+- Override the global intermediate slug (choose from a list of 10 options).
+- Modify the redirection URL.
+5. Submit the form to update the link. The page will automatically refresh to show the changes.
 
 ## Contributing
 
