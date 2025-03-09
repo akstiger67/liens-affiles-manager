@@ -1,72 +1,71 @@
-# Liens Affiliés Manager
+# Affiliate Links Manager
 
-**Liens Affiliés Manager** est un plugin WordPress qui vous permet de gérer facilement vos liens d'affiliation via un type de contenu personnalisé. Le plugin génère automatiquement une URL réécrite basée sur un slug personnalisable et redirige vos visiteurs vers l'URL d'affiliation saisie. De plus, dans l'administration, une colonne dédiée affiche le lien réécrit avec un bouton "Copier" pour une récupération rapide.
+**Affiliate Links Manager** is a WordPress plugin that allows you to easily manage your affiliate links using a custom post type. The plugin automatically generates a rewritten URL based on a customizable intermediate slug and redirects your visitors to the specified affiliate URL. In the admin area, a dedicated column displays the rewritten URL along with a "Copy" button for quick access.
 
-## Fonctionnalités
+## Features
 
-- **Type de contenu personnalisé "Liens affiliés"**  
-  Gérez vos liens d'affiliation directement depuis l'interface WordPress.
+- **Custom Post Type "Affiliate Links"**  
+  Manage your affiliate links directly from the WordPress admin.
 
-- **Meta Box pour l'URL d'affiliation**  
-  Saisissez l'URL d'affiliation lors de la création ou de l'édition d'un lien affilié.
+- **Affiliate URL Meta Box**  
+  Enter the affiliate URL when creating or editing an affiliate link.
 
-- **Redirection front-end**  
-  Lorsqu'un visiteur accède à une URL du type `domaine.com/[slug]/[nomdusite]`, il est automatiquement redirigé vers l'URL d'affiliation définie.
+- **Front-end Redirection**  
+  When a visitor accesses a URL of the form `domain.com/[slug]/[post-name]`, they are automatically redirected to the entered affiliate URL.
 
-- **Slug intermédiaire personnalisable**  
-  Choisissez parmi une dizaine d'options (ex: `go`, `link`, `see`, `check`, `click`, `aller`, `lien`, `voir`, `regarder`, `cliquer`, `acceder`, `visiter`) pour personnaliser l'URL de vos liens affiliés via une page de réglages.
+- **Customizable Intermediate Slug**  
+  Choose from a variety of options (e.g., `go`, `link`, `see`, `check`, `click`, `aller`, `lien`, `voir`, `regarder`, `cliquer`, `acceder`, `visiter`) via a settings page.
 
-- **Colonne personnalisée dans l'administration**  
-  Affiche le lien réécrit dans la liste des "Liens affiliés" avec un bouton "Copier" qui permet de récupérer facilement l'URL.
+- **Custom Admin Column**  
+  Displays the rewritten URL in the "Affiliate Links" admin list with a "Copy" button for quick copying.
 
 ## Installation
 
-1. **Télécharger ou cloner le dépôt**  
-   Clonez ou téléchargez ce dépôt sur votre ordinateur.
+1. **Download or clone the repository**  
+   Clone or download this repository to your computer.
 
-2. **Copier le dossier du plugin**  
-   Placez le dossier `liens-affiles-manager` dans le répertoire `/wp-content/plugins/` de votre installation WordPress.
+2. **Copy the plugin folder**  
+   Place the `liens-affiles-manager` folder in the `/wp-content/plugins/` directory of your WordPress installation.
 
-3. **Installation via l'administration WordPress (optionnel)**  
-   Vous pouvez zipper le dossier et l'installer via **Extensions > Ajouter > Téléverser une extension**.
+3. **Installation via WordPress Admin (Optional)**  
+   Alternatively, zip the folder and install it via **Plugins > Add New > Upload Plugin**.
 
 4. **Activation**  
-   Activez le plugin depuis le menu **Extensions** de l'administration WordPress.
+   Activate the plugin from the **Plugins** menu in the WordPress admin.
 
 5. **Configuration**  
-   Rendez-vous dans **Réglages > Liens Affiliés Manager** pour choisir l'intermédiaire du slug.  
-   **Attention :** Après modification, pensez à rafraîchir vos permaliens dans **Réglages > Permaliens**.
+   Go to **Settings > Affiliate Links Manager** to choose the intermediate slug.  
+   **Note:** After changing this setting, refresh your permalinks by navigating to **Settings > Permalinks** and clicking "Save Changes".
 
-## Utilisation
+## Usage
 
-### Création d'un lien affilié
+### Creating an Affiliate Link
 
-1. Dans l'administration WordPress, accédez au menu **Liens affiliés**.
-2. Cliquez sur **Ajouter Nouveau** pour créer un nouveau lien affilié.
-3. Saisissez le titre (qui sera utilisé pour générer l'URL réécrite) et l'URL d'affiliation dans la meta box.
-4. Enregistrez le lien.  
-   L'URL réécrite sera accessible sous la forme :
+1. In the WordPress admin area, navigate to the **Affiliate Links** menu.
+2. Click **Add New** to create a new affiliate link.
+3. Enter the title (which will be used to generate the rewritten URL) and the affiliate URL in the meta box.
+4. Save the link.
+   
+For example, if you choose `go` as the slug and the title is `my-affiliate`, the URL will be:  https://domain.com/go/my-affiliate
 
-Par exemple, si le slug choisi est `go` et que le titre est `mon-affilie`, l'URL sera :  
 
+### Admin Area
 
-### Administration des liens
-
-Dans la liste des "Liens affiliés", une colonne **Lien réécrit** affiche l'URL générée. Un bouton **Copier** à côté permet de copier rapidement l'URL dans le presse-papiers.
+In the "Affiliate Links" list, a **Rewritten URL** column displays the generated URL. A **Copy** button next to the URL allows you to quickly copy it to your clipboard.
 
 ## Configuration
 
-- **Modifier le slug intermédiaire**  
-Rendez-vous dans **Réglages > Liens Affiliés Manager** pour choisir le slug intermédiaire parmi les options proposées.  
-Après modification, n'oubliez pas de rafraîchir vos permaliens via **Réglages > Permaliens**.
+- **Customize the Intermediate Slug**  
+Go to **Settings > Affiliate Links Manager** to select the intermediate slug from the available options.  
+After making changes, remember to refresh your permalinks via **Settings > Permalinks**.
 
-## Contribuer
+## Contributing
 
-Les contributions sont les bienvenues !  
-Si vous avez des suggestions, des rapports de bugs ou des améliorations, n'hésitez pas à ouvrir une [issue](https://github.com/akstiger67/liens-affiles-manager/issues) ou à soumettre une pull request.
+Contributions are welcome!  
+If you have suggestions, bug reports, or improvements, please open an [issue](https://github.com/akstiger67/liens-affiles-manager/issues) or submit a pull request.
 
-## Auteur
+## Author
 
-Julien Web
+**Akstiger67**  
 [https://julienweb.com](https://julienweb.com)
 
