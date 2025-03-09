@@ -1,12 +1,11 @@
 <?php
 /*
 Plugin Name: Liens Affiliés Manager
-Plugin URI: https://exemple.com
+Plugin URI: https://julienweb.com
 Description: Gère vos liens d'affiliation via un type de contenu personnalisé "Liens affiliés". Vous pouvez choisir l'intermédiaire du slug (globalement ou individuellement) et consulter/modifier vos liens sur une page dédiée avec les boutons "Copier" et "Modifier".
 Version: 1.4
 Author: Votre Nom
-Author URI: https://exemple.com
-License: GPL2
+Author URI: https://julienweb.com
 Text Domain: liens-affiles-manager
 */
 
